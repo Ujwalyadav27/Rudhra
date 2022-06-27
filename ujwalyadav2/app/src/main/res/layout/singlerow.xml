@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:elevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/img1"/>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="148dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img1"
+            android:text="Product"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="165dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="-15dp"
+            android:layout_toRightOf="@+id/text"
+            android:text="Add item"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
